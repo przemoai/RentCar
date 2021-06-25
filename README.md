@@ -1,4 +1,6 @@
 # RentCar
+College Project realised by myself.
+Responsive website that allows us to rent a car from fictional company.
 
 ## Technologies
 -HTML  
