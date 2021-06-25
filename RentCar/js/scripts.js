@@ -281,7 +281,7 @@ function editFinish_conf(removeID, numer) {
 
 
 function loadAuto(nazwa, numer) {
-    let fetchString = `http://localhost/RentCar/auto${numer}.txt`;
+    let fetchString = `http://localhost/RentCar/cars/auto${numer}.txt`;
     var but1 = document.getElementById(nazwa);
     but1.addEventListener('click', function () {
         fetch(fetchString)
