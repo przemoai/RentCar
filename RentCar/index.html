@@ -1,0 +1,554 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <title>Car Rentical</title>
+    <!-- Favicon-->
+    <link rel="icon" type="image/x-icon" href="assets/favicon.png" />
+    <!-- Font Awesome icons (free version)-->
+    <script src="https://use.fontawesome.com/releases/v5.15.3/js/all.js" crossorigin="anonymous"></script>
+    <!-- Google fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700" rel="stylesheet" type="text/css" />
+    <!-- Core theme CSS (includes Bootstrap)-->
+    <link href="css/styles.css" rel="stylesheet" />
+</head>
+
+<body id="page-top">
+
+    <!-- Navigation-->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
+        <div class="container">
+            <a class="navbar-brand" href="#page-top"><img src="assets/img/navbar-logo.png" alt="..." /></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive"
+                aria-expanded="false" aria-label="Toggle navigation">
+                Menu
+                <i class="fas fa-bars ms-1"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav text-uppercase ms-auto py-4 py-lg-0">
+                    <li class="nav-item"><a class="nav-link" href="#portfolio">Oferta</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#services">Usługi</a></li>
+                    <!-- <li class="nav-item"><a class="nav-link" href="#about">O nas</a></li> -->
+                    <!-- <li class="nav-item"><a class="nav-link" href="#team">Nasz zespół</a></li> -->
+                    <li class="nav-item"><a class="nav-link" href="#contact">Kontakt</a></li>
+                    <li>
+                        <div class="nav-item">
+                            <a class="portfolio-link nav-link" data-bs-toggle="modal" href="#cart" onclick="displayCart()">KOSZYK</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Masthead-->
+    <header class="masthead">
+        <div class="container">
+            <div class="masthead-heading text-uppercase">Wypożyczalnia</div>
+            <div class="masthead-subheading">Samochodów sportowych</div>
+
+            <a class="btn btn-primary btn-xl text-uppercase" href="#portfolio">Sprawdź ofertę</a>
+        </div>
+    </header>
+
+
+    <!-- Portfolio Grid-->
+    <section class="page-section bg-light" id="portfolio">
+        <div class="container">
+            <div class="text-center">
+                <h2 class="section-heading text-uppercase">Nasze samochody</h2>
+                <!-- <h3 class="section-subheading text-muted"></h3> -->
+            </div>
+            <div class="row">
+                <div class="col-lg-4 col-sm-6 mb-4">
+                    <!-- Portfolio item 1-->
+                    <div class="portfolio-item">
+                        <a class="portfolio-link" data-bs-toggle="modal" id="click1" href="#portfolioModal1">
+                            <div class="portfolio-hover">
+                                <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
+                            </div>
+                            <img class="img-fluid" src="assets/img/portfolio/1.jpg" alt="..." />
+                        </a>
+                        <div class="portfolio-caption">
+                            <div class="portfolio-caption-heading">Toyota Supra</div>
+                            <!-- <div class="portfolio-caption-subheading text-muted"></div> -->
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6 mb-4">
+                    <!-- Portfolio item 1-->
+                    <div class="portfolio-item">
+                        <a class="portfolio-link" data-bs-toggle="modal" id="click2" href="#portfolioModal2">
+                            <div class="portfolio-hover">
+                                <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
+                            </div>
+                            <img class="img-fluid" src="assets/img/portfolio/2.jpg" alt="..." />
+                        </a>
+                        <div class="portfolio-caption">
+                            <div class="portfolio-caption-heading">Tesla Model 3</div>
+                            <!-- <div class="portfolio-caption-subheading text-muted"></div> -->
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6 mb-4">
+                    <!-- Portfolio item 3-->
+                    <div class="portfolio-item">
+                        <a class="portfolio-link" data-bs-toggle="modal" id="click3" href="#portfolioModal3">
+                            <div class="portfolio-hover">
+                                <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
+                            </div>
+                            <img class="img-fluid" src="assets/img/portfolio/3.jpg" alt="..." />
+                        </a>
+                        <div class="portfolio-caption">
+                            <div class="portfolio-caption-heading">Audi RS6</div>
+                            <!-- <div class="portfolio-caption-subheading text-muted"></div> -->
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6 mb-4 mb-lg-0">
+                    <!-- Portfolio item 4-->
+                    <div class="portfolio-item">
+                        <a class="portfolio-link" data-bs-toggle="modal" id="click4" href="#portfolioModal4">
+                            <div class="portfolio-hover">
+                                <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
+                            </div>
+                            <img class="img-fluid" src="assets/img/portfolio/4.jpg" alt="..." />
+                        </a>
+                        <div class="portfolio-caption">
+                            <div class="portfolio-caption-heading">Lamborghini Aventador S</div>
+                            <!-- <div class="portfolio-caption-subheading text-muted"></div> -->
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6 mb-4 mb-sm-0">
+                    <!-- Portfolio item 5-->
+                    <div class="portfolio-item">
+                        <a class="portfolio-link" data-bs-toggle="modal" id="click5" href="#portfolioModal5">
+                            <div class="portfolio-hover">
+                                <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
+                            </div>
+                            <img class="img-fluid" src="assets/img/portfolio/5.jpg" alt="..." />
+                        </a>
+                        <div class="portfolio-caption">
+                            <div class="portfolio-caption-heading">BMW M3</div>
+                            <!-- <div class="portfolio-caption-subheading text-muted"></div> -->
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6">
+                    <!-- Portfolio item 6-->
+                    <div class="portfolio-item">
+                        <a class="portfolio-link" data-bs-toggle="modal" id="click6" href="#portfolioModal6">
+                            <div class="portfolio-hover">
+                                <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
+                            </div>
+                            <img class="img-fluid" src="assets/img/portfolio/6.jpg" alt="..." />
+                        </a>
+                        <div class="portfolio-caption">
+                            <div class="portfolio-caption-heading">Chevrolet Camaro</div>
+                            <!-- <div class="portfolio-caption-subheading text-muted"></div> -->
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6">
+                    <!-- Portfolio item 7-->
+                    <div class="portfolio-item">
+                        <a class="portfolio-link" data-bs-toggle="modal" id="click7" href="#portfolioModal7">
+                            <div class="portfolio-hover">
+                                <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
+                            </div>
+                            <img class="img-fluid" src="assets/img/portfolio/7.jpg" alt="..." />
+                        </a>
+                        <div class="portfolio-caption">
+                            <div class="portfolio-caption-heading">Audi R8</div>
+                            <!-- <div class="portfolio-caption-subheading text-muted"></div> -->
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6">
+                    <!-- Portfolio item 8-->
+                    <div class="portfolio-item">
+                        <a class="portfolio-link" data-bs-toggle="modal" id="click8" href="#portfolioModal8">
+                            <div class="portfolio-hover">
+                                <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
+                            </div>
+                            <img class="img-fluid" src="assets/img/portfolio/8.jpg" alt="..." />
+                        </a>
+                        <div class="portfolio-caption">
+                            <div class="portfolio-caption-heading">Audi RS7</div>
+                            <!-- <div class="portfolio-caption-subheading text-muted"></div> -->
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6">
+                    <!-- Portfolio item 9-->
+                    <div class="portfolio-item">
+                        <a class="portfolio-link" data-bs-toggle="modal" id="click9" href="#portfolioModal9">
+                            <div class="portfolio-hover">
+                                <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
+                            </div>
+                            <img class="img-fluid" src="assets/img/portfolio/9.jpg" alt="..." />
+                        </a>
+                        <div class="portfolio-caption">
+                            <div class="portfolio-caption-heading">Mercedes GTR</div>
+                            <!-- <div class="portfolio-caption-subheading text-muted"></div> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Services-->
+    <section class="page-section" id="services">
+        <div class="container">
+            <div class="text-center">
+                <h2 class="section-heading text-uppercase">Usługi</h2>
+                <h3 class="section-subheading text-muted">Wszyskie transakcje są objęte dodatkowymi usługami</h3>
+            </div>
+            <div class="row text-center">
+                <div class="col-md-4">
+                    <span class="fa-stack fa-4x">
+                        <i class="fas fa-circle fa-stack-2x text-primary"></i>
+                        <i class="fas fa-parking fa-stack-1x fa-inverse"></i>
+                    </span>
+                    <h4 class="my-3">Przechowywalnia</h4>
+                    <p class="text-muted">W trakcie twojej podróży możemy przechować twój pojazd na naszym monitorowanym parkingu</p>
+                </div>
+                <div class="col-md-4">
+                    <span class="fa-stack fa-4x">
+                        <i class="fas fa-circle fa-stack-2x text-primary"></i>
+                        <i class="fas fa-truck fa-stack-1x fa-inverse"></i>
+
+                    </span>
+                    <h4 class="my-3">Dostawa pod dom</h4>
+                    <p class="text-muted">Każde wypożyczone auto jest dostarczane na życzenie klienta pod jego dom</p>
+                </div>
+                <div class="col-md-4">
+                    <span class="fa-stack fa-4x">
+                        <i class="fas fa-circle fa-stack-2x text-primary"></i>
+                        <i class="fas fa-lock fa-stack-1x fa-inverse"></i>
+                    </span>
+                    <h4 class="my-3">Ubezpieczenie</h4>
+                    <p class="text-muted">Wszystkie transakcje oraz pojazdy są ubezpieczone wieć jeździsz bez obaw o dodatkowe koszty</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact-->
+    <section class="page-section" id="contact">
+        <div class="container">
+            <div class="text-center">
+                <h2 class="section-heading text-uppercase">Skontaktuj się z nami</h2>
+                <h3 class="section-subheading text-muted">Masz jakieś pytania? Pisz smiało odpowiemy ASAP</h3>
+            </div>
+            <form id="contactForm">
+                <div class="row align-items-stretch mb-5">
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <input class="form-control" id="name" type="text" placeholder="Imię *" required="required" />
+                            <p class="help-block text-danger"></p>
+                        </div>
+                        <div class="form-group">
+                            <input class="form-control" id="email" type="email" placeholder=" Email *" required="required" />
+                            <p class="help-block text-danger"></p>
+                        </div>
+                        <div class="form-group mb-md-0">
+                            <input class="form-control" id="phone" type="tel" placeholder="Nr tel. *" required="required" />
+                            <p class="help-block text-danger"></p>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="form-group form-group-textarea mb-md-0">
+                            <textarea class="form-control" id="message" placeholder="Twoja wiadomość *" required="required"></textarea>
+                            <p class="help-block text-danger"></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="text-center">
+                    <div id="success"></div>
+                    <button class="btn btn-primary btn-xl text-uppercase" id="sendMessageButton" type="submit">Wyślij wiadomość</button>
+                </div>
+            </form>
+        </div>
+    </section>
+    <!-- Footer-->
+    <footer class="footer py-4">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-4 text-lg-start">
+                    Podstawy Aplikacji Internetowych &copy; PM
+                    <!-- This script automatically adds the current year to your website footer-->
+                    <!-- (credit: https://updateyourfooter.com/)-->
+                    <script>
+                        document.write(new Date().getFullYear());
+                    </script>
+                </div>
+                <div class="col-lg-4 my-3 my-lg-0">
+                    <a class="btn btn-dark btn-social mx-2" href="#!"><i class="fab fa-twitter"></i></a>
+                    <a class="btn btn-dark btn-social mx-2" href="#!"><i class="fab fa-facebook-f"></i></a>
+                    <a class="btn btn-dark btn-social mx-2" href="#!"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+                <div class="col-lg-4 text-lg-end">
+                    <a class="link-dark text-decoration-none me-3" href="#!">Privacy Policy</a>
+                    <a class="link-dark text-decoration-none" href="#!">Terms of Use</a>
+                </div>
+            </div>
+        </div>
+
+    </footer>
+    <!-- Portfolio Modals-->
+    <!-- Portfolio item 1 modal popup-->
+    <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content" id="modal1"> </div>
+        </div>
+    </div>
+    <!-- Portfolio item 2 modal popup-->
+    <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content" id="modal2"> </div>
+        </div>
+    </div>
+    <!-- Portfolio item 3 modal popup-->
+    <div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content" id="modal3"> </div>
+        </div>
+    </div>
+    <!-- Portfolio item 4 modal popup-->
+    <div class="portfolio-modal modal fade" id="portfolioModal4" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content" id="modal4"> </div>
+        </div>
+    </div>
+    <!-- Portfolio item 5 modal popup-->
+    <div class="portfolio-modal modal fade" id="portfolioModal5" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content" id="modal5"> </div>
+        </div>
+    </div>
+    <!-- Portfolio item 6 modal popup-->
+    <div class="portfolio-modal modal fade" id="portfolioModal6" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content" id="modal6">
+
+            </div>
+        </div>
+    </div>
+    <!-- Portfolio item 7 modal popup-->
+    <div class="portfolio-modal modal fade" id="portfolioModal7" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content" id="modal7">
+
+            </div>
+        </div>
+    </div>
+    <!-- Portfolio item 8 modal popup-->
+    <div class="portfolio-modal modal fade" id="portfolioModal8" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content" id="modal8">
+
+            </div>
+        </div>
+    </div>
+    <!-- Portfolio item 9 modal popup-->
+    <div class="portfolio-modal modal fade" id="portfolioModal9" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content" id="modal9">
+
+            </div>
+        </div>
+    </div>
+    <!-- Cart popup-->
+    <div class="portfolio-modal modal fade" id="cart" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-content">
+
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-9">
+                                <div class="modal-body">
+
+                                    <h2 class="text-uppercase"> Koszyk</h2>
+
+                                    <div id="result"></div>
+                                    <ul class="list-inline">
+
+
+                                    </ul>
+                                    <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
+                                        <i class="fas fa-times me-1"></i>
+                                        Zamknij
+                                    </button>
+
+                                    <!-- <a  class="portfolio-link"> -->
+                                        <a href="#summary" data-bs-toggle="modal" data-bs-dismiss="modal"><button id="realize" class="btn btn-primary btn-xl text-uppercase"  type="button">
+                                        <i class="fas fa-check-circle"></i>
+                                        Finalizuj
+                                    </button></a>
+                                    <!-- </a> -->
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- formularz -->
+    <div class="portfolio-modal modal fade" id="summary" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-content">
+
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-9">
+                                <div class="modal-body modalpadding" id="summaryScreen">
+                                    <h2 class="text-uppercase"> UZUPEŁNIJ DANE OSOBOWE</h2>
+                                    <form method="post" action="#" onsubmit="summary()">
+                                        <div class="formcontent">
+                                            <div class="form-group row">
+                                                <label for="surname" class="col-sm-4 col-form-label">Nazwisko</label>
+                                                <div class="col-7">
+                                                    <input class="form-control" type="text" name="surname" id="surname" title="Uzupełnij nazwisko"
+                                                        pattern="(((^[A-ZĄĆĘŁŃÓŚŹŻ][a-zząćęłńóśźż]+$)|(^[A-ZĄĆĘŁŃÓŚŹŻ][a-zząćęłńóśźż]+-[A-ZĄĆĘŁŃÓŚŹŻ][a-zząćęłńóśźż]+$)))"
+                                                        required>
+                                                </div>
+                                                <div id="surname_error"></div>
+                                            </div>
+                                            <div class="form-group row">
+                                                <label for="first_name" class="col-sm-4 col-form-label">Imię</label>
+                                                <div class="col-7">
+                                                    <input class="form-control" type="text" name="first_name" id="first_name" title="Uzupełnij imię"
+                                                        pattern="(((^[A-ZĄĆĘŁŃÓŚŹŻ][a-zząćęłńóśźż]+$)|(^[A-ZĄĆĘŁŃÓŚŹŻ][a-zząćęłńóśźż]+-[A-ZĄĆĘŁŃÓŚŹŻ][a-zząćęłńóśźż]+$)))"
+                                                        required>
+                                                </div>
+                                                <div id="first_name_error"></div>
+                                            </div>
+                                            <div class="form-group row">
+                                                <label for="ademail" class="col-sm-4 col-form-label">Email</label>
+                                                <div class="col-7">
+                                                    <input class="form-control" type="email" name="ademail" id="ademail" title="Uzupełnij email"
+                                                        required>
+                                                </div>
+                                            </div>
+                                            <div class="form-group row">
+                                                <label for="phonenum" class="col-sm-4 col-form-label">Numer tel.</label>
+                                                <div class="col-7">
+                                                    <input class="form-control" type="tel" id="phonenum" name="phonenum"
+                                                        title="Uzupełnij numer telefonu" pattern="\(?([0-9]{3})\)?([ .-]?)([0-9]{3})\2([0-9]{3})"
+                                                        required>
+                                                </div>
+                                            </div>
+                                            <div class="form-group row">
+                                                <label for="street" class="col-sm-4 col-form-label">Ulica</label>
+                                                <div class="col-7">
+                                                    <input class="form-control" type="text" name="street" id="street" title="Uzupełnij ulicę"
+                                                    pattern="(((^[A-ZĄĆĘŁŃÓŚŹŻ][a-zząćęłńóśźż]+$)|(^[A-ZĄĆĘŁŃÓŚŹŻ][a-zząćęłńóśźż]+-[A-ZĄĆĘŁŃÓŚŹŻ][a-zząćęłńóśźż]+$)))" required>
+                                                </div>
+                                            </div>
+                                            <div class="form-group row">
+                                                <label for="street_number" class="col-sm-4 col-form-label">Numer mieszkania</label>
+                                                <div class="col-7">
+                                                    <input class="form-control" type="tel" id="street_number" name="street_number"
+                                                        title="Uzupełnij numer mieszkania" pattern="([0-9]{1,3})([/]?)([0-9]{1,3})" required>
+                                                </div>
+                                            </div>
+                                            <div class="form-group row">
+                                                <label for="post_code" class="col-sm-4 col-form-label">Kod Pocztowy</label>
+                                                <div class="col-7">
+                                                    <input class="form-control" type="text" id="post_code" name="post_code"
+                                                        pattern="([0-9]{2})([ .-]?)([0-9]{3})" required>
+                                                </div>
+                                            </div>
+                                            <div class="form-group row">
+                                                <label for="city" class="col-sm-4 col-form-label">Miasto</label>
+                                                <div class="col-7">
+                                                    <input class="form-control" type="text" name="city" id="city" title="Uzupełnij miasto"
+                                                    pattern="(((^[A-ZĄĆĘŁŃÓŚŹŻ][a-zząćęłńóśźż]+$)|(^[A-ZĄĆĘŁŃÓŚŹŻ][a-zząćęłńóśźż]+-[A-ZĄĆĘŁŃÓŚŹŻ][a-zząćęłńóśźż]+$)))" required>
+                                                </div>
+                                            </div>
+                                            <!-- <div class="col-7">
+                                                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                                                <label class="form-check-label" for="flexRadioDefault1">
+                                                  Default radio
+                                                </label>
+                                              </div>
+                                            <div class="col-7">
+                                                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+                                                <label class="form-check-label" for="flexRadioDefault2">
+                                                  Default checked radio
+                                                </label>
+                                              </div> -->
+                                            <fieldset class="form-group">
+                                                <div class="row">
+                                                    <div class="col-form-label col-sm-4 pt-0">Dodatkowe usługi</div>
+                                                    <div class="col-sm-7">
+                                                        <div class="form-check">
+                                                            <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1"
+                                                                value="Parking dla klienta" checked>
+                                                            <label class="form-check-label labelcustom" for="gridRadios1">
+                                                                Parking dla klienta
+                                                            </label>
+                                                        </div>
+                                                        <div class="form-check">
+                                                            <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2"
+                                                                value="Dostawa pod dom">
+                                                            <label class="form-check-label labelcustom" for="gridRadios2">
+                                                                Dostawa pod dom
+                                                            </label>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </fieldset>
+
+
+                                            <div class="form-check"></div>
+                                            <input type="checkbox" name="rules" required><strong>Akceptuję regulamin</strong>
+                                        </div>
+                                        <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
+                                            <i class="fas fa-times me-1"></i>
+                                            Zamknij
+                                        </button>
+                                        <button class="btn btn-primary btn-xl text-uppercase" type="submit">
+                                            <i class="fas fa-check-circle"></i>
+                                            Zamów
+
+                                        </button>
+                                        <!-- <input type="submit" onsubmit="summary()" value="Zamów">  NIE DZIAŁAJACY ONSUMBIT(BLAD O BRAKU FORMULARZA)-->
+
+                                    </form>
+
+                                </div>
+
+
+
+
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Bootstrap core JS-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Core theme JS-->
+    <script src="js/scripts.js"></script>
+
+</body>
+
+</html>
