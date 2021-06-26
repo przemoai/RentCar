@@ -7,6 +7,7 @@ Responsive website that allows us to rent a car from fictional company.
 - CSS  
 - JavaScript  
 - FetchAPI  
+- Bootstrap
 
 ## Features
 - Single page website  
